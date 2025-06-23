@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class CheckSorted {
     public static Boolean isSorted(int[] arr){
+        if(arr == null  || arr.length ==0){
+            return false;
+        }
 	if(arr.length==1){
 		return true;
 	}
